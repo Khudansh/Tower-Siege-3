@@ -237,7 +237,7 @@ async function setBackground(){
   var responseJSON =await response.json();
   console.log(responseJSON);
 
-  var datetime=responseJSON.datetime;
+  var datetime=await responseJSON.datetime;
   console.log(datetime);
 
   var hour=datetime.slice(11,13);

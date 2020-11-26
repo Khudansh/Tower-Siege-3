@@ -231,7 +231,7 @@ function keyPressed(){
 }
 
 async function setBackground(){
-  var response =await fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo");
+  var response =await fetch("https://worldtimeapi.org/api/timezone/Asia/Tokyo");
   console.log(response);
 
   var responseJSON =await response.json();

@@ -227,11 +227,12 @@ function mouseReleased(){
 function keyPressed(){
   if(keyCode==32){
     slingshot.attach(polygon.body);
+    Mater.Body.setPosition(polygon.body,{x:polygon.body.position.x,y:polygon.body.position.y},{x:200,y:200});
   }
 }
 
 async function setBackground(){
-  var response =await fetch("https://worldtimeapi.org/api/timezone/Asia/Tokyo");
+  var response =await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
   console.log(response);
 
   var responseJSON =await response.json();
